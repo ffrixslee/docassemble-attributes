@@ -12,8 +12,7 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: number
 ---
-generic object: DADTNumber
-question: How much does is $ { x.object_name() } in EUR ?
+question: How much is $ { x.object_name() } in EUR ?
 fields: 
   - ${ x.object_name() }: x.value
     datatype: currency
