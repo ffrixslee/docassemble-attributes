@@ -127,6 +127,9 @@ class DADTContinue(DADataType):
 class DADTNumber(DADataType):
   pass
 
+class DADTCurrency(DADataType):
+    pass
+
 class DADTString(DADataType):
   pass
 
@@ -144,6 +147,3 @@ class DADTDateTime(DADataType):
 
 class DADTDict(DADataType):
   pass
-
-class DADTCurrency(DADataType):
-    pass

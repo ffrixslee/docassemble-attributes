@@ -9,7 +9,7 @@ objects:
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
-  - currency: DADTCurrency
+  - exchange_rate: DADTCurrency
   - birthdate: DADTDate
   - email_address: DADTEmail
   - terms: DADTContinue
@@ -29,7 +29,7 @@ subquestion: |
   
   The age is ${ age }.
 
-  It is ${ currency }.
+  It is ${ exchange_rate }.
   
   The fact is ${ fact }.
   
