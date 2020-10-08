@@ -9,15 +9,16 @@ objects:
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
-  - exchange_rate: DADTCurrency
   - birthdate: DADTDate
   - email_address: DADTEmail
   - terms: DADTContinue
   - lunch: DADTTime
   - end_of_the_world: DADTDateTime
   - choice: DADTDict
+  - exchange_rate: DADTCurrency
   - number_of_cars: DADTInt
   - mood: DADTMl
+  - insurance: DADTYesNoRadio
 ---
 mandatory: True
 question: Summary
@@ -30,8 +31,6 @@ subquestion: |
   The name is ${ name }.
   
   The age is ${ age }.
-
-  It is ${ exchange_rate }.
   
   The fact is ${ fact }.
   
@@ -45,6 +44,10 @@ subquestion: |
 
   You chose ${ choice }.
 
+  It is ${ exchange_rate }.
+
   There are ${ number_of_cars }.
 
   You sound ${ mood }.
+
+  You have ${ insurance }.

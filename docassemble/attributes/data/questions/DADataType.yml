@@ -12,14 +12,6 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: number
 ---
-generic object: DADTCurrency
-question: How much is ${ x.object_name() } in EUR ?
-fields: 
-  - ${ x.object_name() }: x.value
-    datatype: currency
-    min: 0
-    currency symbol: €
----
 generic object: DADTEmail
 question: What is ${ x.object_name() } (an email address)?
 fields:
@@ -31,6 +23,7 @@ question: What is ${ x.object_name() }?
 fields:
   - ${ x.object_name() }: x.value
     datatype: text
+    input type: area
 ---
 generic object: DADTDate
 question: What date is ${ x.object_name() }?
@@ -55,20 +48,34 @@ question: Which to choose ?
 fields:
   - ${ x.object_name() }: x.value
     datatype: checkboxes
+    input type: radio
     choices: 
       - Apple
       - Bananas
       - Peach
 ---
-generic objects: DADTInt
+generic object: DADTCurrency
+question: How much is ${ x.object_name() } in EUR ?
+fields: 
+  - ${ x.object_name() }: x.value
+    datatype: currency
+    min: 0
+    currency symbol: €
+---
+generic object: DADTInt
 question: How many ${ x.object_name() } are there ?
 fields:
   - ${ x.object_name() }: x.value
     datatype: integer
-
 ---
-generic objects: DADTMl
+generic object: DADTMl
 question: What's your ${ x.object_name()} ?
 fields:
   - no label: mood
-    datatype: ml 
+    datatype: ml
+    input type: area 
+---
+generic object: DADTYesNoRadio
+question: Do you have ${ x.object_name()} ?
+fields:
+  - datatype: yesnoradio
