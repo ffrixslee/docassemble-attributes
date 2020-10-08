@@ -41,3 +41,9 @@ question: When is ${ x.object_name() }?
 fields:
   - ${ x.object_name() }: x.value
     datatype: datetime
+---
+generic object: DADTDict
+question: Which to choose ${ x.object_name() }?
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: checkboxes

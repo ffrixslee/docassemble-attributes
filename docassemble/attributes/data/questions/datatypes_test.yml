@@ -14,6 +14,7 @@ objects:
   - terms: DADTContinue
   - lunch: DADTTime
   - end_of_the_world: DADTDateTime
+  - choice: DADTDict
 ---
 mandatory: True
 question: Summary
