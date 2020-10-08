@@ -12,6 +12,12 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: number
 ---
+generic object: DADTNumber
+question: How much does is $ { x.object_name() } in EUR ?
+fields: 
+  - ${ x.object_name() }: x.value
+    datatype: currency
+---
 generic object: DADTEmail
 question: What is ${ x.object_name() } (an email address)?
 fields:
@@ -43,7 +49,7 @@ fields:
     datatype: datetime
 ---
 generic object: DADTDict
-question: Which to choose ${ x.object_name() }?
+question: Which to choose ?
 fields:
   - ${ x.object_name() }: x.value
     datatype: checkboxes
@@ -51,3 +57,4 @@ fields:
       - Apple
       - Bananas
       - Peach
+---
