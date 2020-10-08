@@ -47,3 +47,7 @@ question: Which to choose ${ x.object_name() }?
 fields:
   - ${ x.object_name() }: x.value
     datatype: checkboxes
+    choices: 
+      - Apple
+      - Bananas
+      - Peach
