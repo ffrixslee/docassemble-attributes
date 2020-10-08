@@ -71,7 +71,7 @@ fields:
 generic object: DADTMl
 question: What's your ${ x.object_name()} ?
 fields:
-  - no label: mood
+  - ${ x.object_name() }: x.value
     datatype: ml
     input type: area 
 ---
