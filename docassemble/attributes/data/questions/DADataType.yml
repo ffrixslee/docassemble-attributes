@@ -78,4 +78,5 @@ fields:
 generic object: DADTYesNoRadio
 question: Do you have ${ x.object_name()} ?
 fields:
+  - ${ x.object_name() }: x.value
   - datatype: yesnoradio
