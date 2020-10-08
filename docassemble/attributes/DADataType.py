@@ -2,7 +2,7 @@
 
 from docassemble.base.util import DAObject
 
-__all__ = ['DADTBoolean', 'DADTContinue', 'DADTNumber', 'DADTString', 'DADTEmail', 'DADTDate', 'DADTTime', 'DADTDateTime', 'DADTDict', 'DADTCurrency']
+__all__ = ['DADTBoolean', 'DADTContinue', 'DADTNumber', 'DADTString', 'DADTEmail', 'DADTDate', 'DADTTime', 'DADTDateTime', 'DADTDict', 'DADTCurrency', 'DADTMl']
 
 class DADataType(DAObject):
     def init(self, input_type="default", *pargs, **kwargs):
@@ -149,4 +149,7 @@ class DADTDict(DADataType):
   pass
 
 class DADTInt(DADataType):
+  pass
+
+class DADTMl(DADataType):
   pass

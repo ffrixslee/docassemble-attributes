@@ -17,6 +17,7 @@ objects:
   - end_of_the_world: DADTDateTime
   - choice: DADTDict
   - number_of_cars: DADTInt
+  - mood: DADTMl
 ---
 mandatory: True
 question: Summary
@@ -30,7 +31,7 @@ subquestion: |
   
   The age is ${ age }.
 
-  It is ${ exchange_rate , symbol=u'€' }.
+  It is ${ exchange_rate }.
   
   The fact is ${ fact }.
   
@@ -45,3 +46,5 @@ subquestion: |
   You chose ${ choice }.
 
   There are ${ number_of_cars }.
+
+  You sound ${ mood }.

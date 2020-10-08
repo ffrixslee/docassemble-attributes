@@ -65,3 +65,10 @@ question: How many ${ x.object_name() } are there ?
 fields:
   - ${ x.object_name() }: x.value
     datatype: integer
+
+---
+generic objects: DADTMl
+question: What's your ${ x.object_name()} ?
+fields:
+  - no label: mood
+    datatype: ml 
