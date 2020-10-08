@@ -147,3 +147,6 @@ class DADTDateTime(DADataType):
 
 class DADTDict(DADataType):
   pass
+
+class DADTInt(DADataType):
+  pass

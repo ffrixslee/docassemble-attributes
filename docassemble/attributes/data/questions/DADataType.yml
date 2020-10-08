@@ -13,7 +13,7 @@ fields:
     datatype: number
 ---
 generic object: DADTCurrency
-question: How much is $ { x.object_name() } in EUR ?
+question: How much is ${ x.object_name() } in EUR ?
 fields: 
   - ${ x.object_name() }: x.value
     datatype: currency
@@ -60,3 +60,8 @@ fields:
       - Bananas
       - Peach
 ---
+generic objects: DADTInt
+question: How many ${ x.object_name() } are there ?
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: integer

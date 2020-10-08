@@ -16,6 +16,7 @@ objects:
   - lunch: DADTTime
   - end_of_the_world: DADTDateTime
   - choice: DADTDict
+  - number_of_cars: DADTInt
 ---
 mandatory: True
 question: Summary
@@ -29,7 +30,7 @@ subquestion: |
   
   The age is ${ age }.
 
-  It is ${ exchange_rate }.
+  It is ${ exchange_rate , symbol=u'€' }.
   
   The fact is ${ fact }.
   
@@ -41,4 +42,6 @@ subquestion: |
   
   The end of the world is scheduled for ${ end_of_the_world }.
 
-  You chose ${ choice}.
+  You chose ${ choice }.
+
+  There are ${ number_of_cars }.
