@@ -9,7 +9,7 @@ objects:
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
-  - currency: DADTNumber
+  - currency: DADTCurrency
   - birthdate: DADTDate
   - email_address: DADTEmail
   - terms: DADTContinue

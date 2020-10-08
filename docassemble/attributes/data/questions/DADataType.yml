@@ -12,10 +12,13 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: number
 ---
+generic object: DADTCurrency
 question: How much is $ { x.object_name() } in EUR ?
 fields: 
   - ${ x.object_name() }: x.value
     datatype: currency
+    min: 0
+    currency symbol: €
 ---
 generic object: DADTEmail
 question: What is ${ x.object_name() } (an email address)?
