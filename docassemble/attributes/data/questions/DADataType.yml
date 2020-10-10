@@ -10,6 +10,7 @@ objects:
   - favourite: DADTObject.using(source=child)
 
 code: |
+  DADTObject.clear()
   DADTObject.append()
   DADTObject.gathered = True
 ---
