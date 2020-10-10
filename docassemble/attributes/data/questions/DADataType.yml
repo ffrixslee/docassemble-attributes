@@ -11,11 +11,6 @@ objects:
   - DADTObject[i].child: |
       DAList.using(object_type=Thing, complete_attribute='complete')
 ---
-code: |
-  DADTObject.clear()
-  DADTObject.append()
-  DADTObject.gathered = True
----
 generic object: DADTBoolean
 question: ${ x.object_name() }?
 yesno: x.value
