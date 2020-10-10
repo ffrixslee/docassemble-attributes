@@ -84,7 +84,7 @@ fields:
 generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
-  - Option : x.value
+  - ${ x.object_name() } : x.value
     datatype: object_radio
     choices: favourite
     objects:
