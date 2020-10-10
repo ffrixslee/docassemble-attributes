@@ -7,13 +7,9 @@ fields:
 
 objects:
   - DADTObject: |
-      DAList.using(
-        object_type=Thing,
-        complete_attribute='complete')
+      DAList.using(object_type=Thing, elements=[fact,name], complete_attribute='complete')
   - DADTObject[i].child: |
-      DAList.using(
-        object_type=Thing,
-        complete_attribute='complete')
+      DAList.using(object_type=Thing, complete_attribute='complete')
 ---
 code: |
   DADTObject.clear()
