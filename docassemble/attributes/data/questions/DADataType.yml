@@ -5,9 +5,13 @@ fields:
     datatype: object_radio
     choices: favourite
 objects:
-  - DADTObject = DAList(name,age)
+  - DADTObject: DAList()
   - child: DAList.using(object_type=DAObject)
   - favourite: DADTObject.using(source=child)
+
+code: |
+  DADTObject.append()
+  DADTObject.gathered = True
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
