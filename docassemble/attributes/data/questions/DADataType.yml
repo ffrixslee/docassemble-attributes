@@ -3,9 +3,17 @@ question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
     datatype: object_radio
-    choices: DADTObject
+    choices: favourite
+
 objects:
-  - DADTObject: DAList()
+  - DADTObject: |
+      DAList.using(
+        object_type=Thing,
+        complete_attribute='complete')
+  - DADTObject[i].child: |
+      DAList.using(
+        object_type=Thing,
+        complete_attribute='complete')
 ---
 code: |
   DADTObject.clear()
