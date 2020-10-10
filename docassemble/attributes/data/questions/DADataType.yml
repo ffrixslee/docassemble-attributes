@@ -89,7 +89,7 @@ fields:
     choices: favourite
     objects:
       - DADTObject: DAList
-      - child: DAList.using(object_type=Individual)
+      - child: DAList.using(object_type=DAObject)
       - favourite: DADTObject.using(source=child)
 ---
 
