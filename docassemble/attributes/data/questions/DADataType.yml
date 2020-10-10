@@ -5,7 +5,7 @@ fields:
     datatype: object_radio
     choices: favourite
 objects:
-  - DADTObject: DAList
+  - DADTObject = DAList(name,age)
   - child: DAList.using(object_type=DAObject)
   - favourite: DADTObject.using(source=child)
 ---
