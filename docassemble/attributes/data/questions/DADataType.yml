@@ -2,12 +2,10 @@ generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
-    datatype: object_radio
-    choices: DADTObject
-
-objects:
-  - DADTObject: DAList()
-  - DAList = [name,age]
+    datatype: object_checkboxes
+    choices: 
+      - name
+      - age
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
