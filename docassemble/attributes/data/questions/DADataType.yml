@@ -88,9 +88,11 @@ fields:
     datatype: object_radio
     choices: favourite
 objects:
-  - child: DAList.using(object_type=[DADTYesNoRadio,DADTInt], ask_object_type=True)
+  - DADTObject = [fact, name, age, birthdate, email_address,terms, lunch, end_of_the_world, choice, exchange_rate, number_of_cars, mood, insurance] 
+  - child: DAList.using(object_type=Individual, ask_object_type=True)
   - favourite: DADTObject.using(source=child)
 ---
+
 
 
 

@@ -20,6 +20,7 @@ objects:
   - mood: DADTMl
   - insurance: DADTYesNoRadio
   - option: DADTEnum
+  
 ---
 mandatory: True
 question: Summary
