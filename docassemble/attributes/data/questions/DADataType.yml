@@ -2,7 +2,7 @@ generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
-    datatype: object_checkboxes
+    datatype: object_radio
     choices: 
       - name
       - age
