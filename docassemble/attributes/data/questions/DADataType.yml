@@ -7,15 +7,6 @@ fields:
       - name
       - age
       - birthdate
-      - email_address
-      - terms
-      - lunch
-      - end_of_the_world
-      - choice
-      - exchange_rate
-      - number_of_cars
-      - mood
-      - insurance
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
