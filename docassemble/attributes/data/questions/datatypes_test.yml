@@ -19,6 +19,7 @@ objects:
   - number_of_cars: DADTInt
   - mood: DADTMl
   - insurance: DADTYesNoRadio
+  - option: DADTEnum
 ---
 mandatory: True
 question: Summary
@@ -51,3 +52,5 @@ subquestion: |
   You sound ${ mood }.
 
   You have ${ insurance }.
+
+  You selected ${ option }.

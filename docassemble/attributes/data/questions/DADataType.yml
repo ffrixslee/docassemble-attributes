@@ -80,3 +80,16 @@ question: Do you have ${ x.object_name()} ?
 fields:
   - ${ x.object_name() }: x.value
     datatype: yesnoradio
+---
+generic object: DADTEnum
+question: Please select an ${ x.object_name() }.
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: object_radio
+    choices: favourite
+objects:
+  - child: DAList.using(object_type=DAObject, ask_object_type=True)
+  - favourite: DADTObject.using(source=child)
+
+
+  
