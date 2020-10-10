@@ -6,6 +6,11 @@ fields:
     choices: 
       - name
       - age
+      - birthdate
+      - email_address
+      - terms
+      - lunch
+      - end_of_the_world
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
