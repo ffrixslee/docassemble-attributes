@@ -19,7 +19,6 @@ objects:
   - number_of_cars: DADTInt
   - mood: DADTMl
   - insurance: DADTYesNoRadio
-  - DADTObject
   - option: DADTEnum
 ---
 mandatory: True

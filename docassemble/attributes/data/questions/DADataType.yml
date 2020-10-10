@@ -81,17 +81,15 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: yesnoradio
 ---
-generic object: DADTObject
-objects:
-  - child: DAList.using(object_type=[DADTYesNoRadio,DADTInt], ask_object_type=True)
-  - favourite: DADTObject.using(source=child)
----
 generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
   - Option : x.value
     datatype: object_radio
     choices: favourite
+objects:
+  - child: DAList.using(object_type=[DADTYesNoRadio,DADTInt], ask_object_type=True)
+  - favourite: DADTObject.using(source=child)
 ---
 
 
