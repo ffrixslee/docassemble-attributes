@@ -3,7 +3,7 @@ question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
     datatype: object_radio
-    choices: favourite
+    choices: DADTObject
 
 objects:
   - DADTObject: |
