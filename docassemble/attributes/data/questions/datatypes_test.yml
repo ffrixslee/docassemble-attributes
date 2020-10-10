@@ -6,6 +6,7 @@ include:
   - DADataType.yml
 ---
 objects:
+  - option: DADTEnum
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
@@ -19,8 +20,7 @@ objects:
   - number_of_cars: DADTInt
   - mood: DADTMl
   - insurance: DADTYesNoRadio
-  - option: DADTEnum
-  
+
 ---
 mandatory: True
 question: Summary
@@ -30,6 +30,8 @@ subquestion: |
   The user agreed to the terms.
   % endif
   
+  You selected ${ option }.
+
   The name is ${ name }.
   
   The age is ${ age }.
@@ -53,5 +55,3 @@ subquestion: |
   You sound ${ mood }.
 
   You have ${ insurance }.
-
-  You selected ${ option }.
