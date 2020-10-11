@@ -24,6 +24,7 @@ code: |
               ]
 ---
 generic object: DADTObject
+question: Please choose one.
 field: target_variable
 buttons:
   - "Name": name
