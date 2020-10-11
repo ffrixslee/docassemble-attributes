@@ -28,6 +28,8 @@ question: Please choose one.
 fields:
   - ${ x.object_name() }: x.value
     datatype: radio
+    choices: 
+      - DADTObject
 objects:
   DADTObject: DAList
   name: Thing
