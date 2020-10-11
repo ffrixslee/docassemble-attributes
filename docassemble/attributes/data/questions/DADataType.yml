@@ -1,13 +1,13 @@
 generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
-  - ${ x.object_name() } : x.value(options)
+  - ${ x.object_name() } : x.value
     datatype: radio
     code: |
       options
 ---
 code: |
-  options = ['name', 'fact', 'email_address']
+  options = [list(map('name','age','fact'))]
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
