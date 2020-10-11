@@ -1,12 +1,17 @@
+generic object: DADTObject1
+question: Please specify a list of objects.
+objects:
+  - DADTObject: DAList
+  - name: Thing
+  - age: Thing
+  - child: DAList.using(object_type=Thing)
+  - favourite: DADTObject.using(source=child)
+---
 generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
-    datatype: object_radio
-    choices: 
-      - name
-      - age
-      - birthdate
+    choices: favourite
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
