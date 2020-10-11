@@ -7,7 +7,7 @@ fields:
       options
 ---
 code: |
-  options = [map('name','age','fact')]
+  options = list[map('name','age','fact')]
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
