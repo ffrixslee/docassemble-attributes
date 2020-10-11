@@ -24,13 +24,11 @@ code: |
               ]
 ---
 generic object: DADTObject
-question: Please choose one.
-fields:
-  - ${ x.object_name() }: x.value
-    datatype: object
-    choices: 
-      - favourite.name
-      - favourite.age
+field: target_variable
+buttons:
+  - "Name": name
+  - "Age": age
+
 objects:
   - name: Thing
   - age: Thing
