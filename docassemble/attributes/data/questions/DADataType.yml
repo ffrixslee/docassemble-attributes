@@ -24,11 +24,12 @@ code: |
               ]
 ---
 generic object: DADTObject
-question: Please choose one.
 field: target_variable
+question: |
+  Please choose one
 buttons:
-  - "Name": name
-  - "Age": age
+  code: |
+    [{name:"Name"}, {age:"Age"}]
 
 objects:
   - name: Thing
