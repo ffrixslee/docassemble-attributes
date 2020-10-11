@@ -28,7 +28,9 @@ question: Please choose one.
 fields:
   - ${ x.object_name() }: x.value
     datatype: radio
-    no label: favourite
+    choices: 
+      - favourite.name
+      - favourite.age
 objects:
   - name: Thing
   - age: Thing
