@@ -7,7 +7,7 @@ fields:
       options
 ---
 code: |
-  options = [x for i in object[i:13]]
+  options = [x for i in object[i:12]]
 
 ---
 generic object: DADTBoolean
