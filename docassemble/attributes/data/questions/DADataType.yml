@@ -22,6 +22,17 @@ code: |
               'mood',
               'insurance'
               ]
+---
+generic object: DADTObject
+question: Please choose one.
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: radio
+objects:
+  DADTObject: DAList
+  name: Thing
+  age: Thing
+  reference: DADTObject.using(object_type=Thing, there_are_any=True, there_is_another=True, ask_object_type=True)
 
 ---
 generic object: DADTBoolean
