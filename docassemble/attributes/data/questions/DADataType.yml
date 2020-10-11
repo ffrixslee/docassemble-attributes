@@ -3,7 +3,8 @@ question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
     datatype: object
-    choices: favourite
+    choices: 
+      - favourite
 objects:
   - DADTObject: DAList
   - name: Thing
