@@ -3,7 +3,7 @@ question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
     datatype: radio
-    code: |
+    choices:
       options
 ---
 code: |
@@ -85,7 +85,6 @@ question: How much is ${ x.object_name() } in EUR ?
 fields: 
   - ${ x.object_name() }: x.value
     datatype: currency
-    min: 0
     currency symbol: €
 ---
 generic object: DADTInt
