@@ -1,7 +1,7 @@
 generic object: DADTEnum
 question: Please select an ${ x.object_name() }.
 fields:
-  - ${ x.object_name() } : x.option
+  - ${ x.object_name() } : x.value.option
     datatype: radio
     code: |
       options
