@@ -4,6 +4,7 @@ fields:
   - ${ x.object_name() } : x.value
     datatype: object
     code: |
+      options
 ---
 code: |
   options = [
