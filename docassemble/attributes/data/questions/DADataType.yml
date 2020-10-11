@@ -6,12 +6,11 @@ fields:
     code: |
 ---
 code: |
-  options
-    myoptions = [
-            {'apple': "Apples"},
-            {'orange': "Oranges"},
-            {'pear': "Pears"}
-          ]
+  options = [
+              {'apple': "Apples"},
+              {'orange': "Oranges"},
+              {'pear': "Pears"}
+            ]
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
