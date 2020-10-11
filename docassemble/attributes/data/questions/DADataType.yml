@@ -3,15 +3,15 @@ question: Please select an ${ x.object_name() }.
 fields:
   - ${ x.object_name() } : x.value
     datatype: object
-    choices: 
-      - DADTObject[i].child
-objects:
-  - name: Thing
-  - age: Thing
-  - DADTObject: |
-      DAList.using(object_type=Thing, ask_object_type=True)
-  - DADTObject[i].child: |
-      DAList.using(object_type=Individual, ask_object_type=True)
+    code: |
+---
+code: |
+  options
+    myoptions = [
+            {'apple': "Apples"},
+            {'orange': "Oranges"},
+            {'pear': "Pears"}
+          ]
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
