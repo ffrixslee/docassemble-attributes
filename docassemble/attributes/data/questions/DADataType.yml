@@ -4,13 +4,14 @@ fields:
   - ${ x.object_name() } : x.value
     datatype: object
     choices: 
-      - favourite
+      - DADTObject[i].child
 objects:
-  - DADTObject: DAList
-  - name: DAList
-  - age: DAList
-  - child: DAList.using(object_type=DAList, ask_object_type=True)
-  - favourite: DADTObject.using(object_type=DAList, ask_object_type=True)
+  - name: Thing
+  - age: Thing
+  - DADTObject: |
+      DAList.using(object_type=Thing, ask_object_type=True)
+  - DADTObject[i].child: |
+      DAList.using(object_type=Individual, ask_object_type=True)
 ---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
