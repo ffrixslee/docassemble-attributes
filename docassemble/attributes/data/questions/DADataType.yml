@@ -27,7 +27,7 @@ generic object: DADTObject
 question: Please choose one.
 fields:
   - ${ x.object_name() }: x.value
-    datatype: radio
+    datatype: object
     choices: 
       - favourite.name
       - favourite.age
