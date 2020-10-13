@@ -23,24 +23,6 @@ code: |
               'insurance'
               ]
 ---
-generic object: Test
-question: Please specify a list.
-field: 
-  - ${ x.object_name() } : x.value
-    datatype: radio
-    code: |
-      listo
----
-code: |
-  listo = [2,3,4]
----
-objects:
-  - name: Thing
-  - age: Thing
-  - child: DAList.using(object_type=Thing, there_are_any=True, there_is_another=True, ask_object_type=True )
-  - favourite: DADTObject.using(source=child)
-
----
 generic object: DADTBoolean
 question: ${ x.object_name() }?
 yesno: x.value

@@ -7,7 +7,6 @@ include:
 ---
 objects:
   - option: DADTEnum
-  - selection: Test
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
@@ -32,8 +31,6 @@ subquestion: |
   % endif
   
   You selected ${ option }.
-
-  You chose ${ selection }.
   
   The name is ${ name }.
   
