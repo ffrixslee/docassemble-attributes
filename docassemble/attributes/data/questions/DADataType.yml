@@ -23,13 +23,13 @@ code: |
               'insurance'
               ]
 ---
-generic object: DADTObject
-field: target_variable
-question: |
-  Please choose one
-buttons:
-  code: |
-    [{name:"Name"}, {age:"Age"}]
+generic object: Test
+field: 
+  - ${ x.object_name() }: x.value
+    question: Please specify a list.
+    datatype: radio
+    code: |
+      DADTObject
 
 objects:
   - name: Thing

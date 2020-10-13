@@ -7,7 +7,7 @@ include:
 ---
 objects:
   - option: DADTEnum
-  - selection: DADTObject
+  - selection: Test
   - fact: DADTBoolean
   - name: DADTString
   - age: DADTNumber
