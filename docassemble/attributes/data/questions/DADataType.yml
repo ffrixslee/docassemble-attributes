@@ -30,6 +30,9 @@ field:
     datatype: radio
     code: |
       favourite
+---
+code: |
+  peanuts = peanuts.append(favourite)
    
 ---
 objects:
