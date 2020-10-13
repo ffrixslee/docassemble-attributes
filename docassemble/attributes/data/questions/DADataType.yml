@@ -27,7 +27,7 @@ generic object: DADTTest
 question: Please specify a list.
 fields:
   - ${ x.object_name() }: x.value
-    datatype: radio
+    datatype: object
     choices:
       - favourite.name
 ---
