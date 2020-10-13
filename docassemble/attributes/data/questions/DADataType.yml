@@ -29,7 +29,8 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: object
     choices:
-      - favourite.name
+      - DADTObject.name
+      - DADTObject.age
 ---
 objects:
   - DADTObject: DAList
