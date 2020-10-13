@@ -23,6 +23,21 @@ code: |
               'insurance'
               ]
 ---
+generic object: DADTObject
+field: target_variable
+question: |
+  Please choose one.
+buttons:
+  code: |
+    [{name:"Name"}, {age:"Age"}]
+
+objects:
+  - name: Thing
+  - age: Thing
+  - child: DAList.using(object_type=Thing, there_are_any=True, there_is_another=True, ask_object_type=True )
+  - favourite: DADTObject.using(source=child)
+
+---
 generic object: DADTBoolean
 question: ${ x.object_name() }?
 yesno: x.value
