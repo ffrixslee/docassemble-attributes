@@ -27,10 +27,12 @@ generic object: DADTTest
 question: Please specify a list.
 fields:
   - ${ x.object_name() }: x.value
-    datatype: object
-    choices:
-      - DADTObject.name
-      - DADTObject.age
+    datatype: radio
+    code: |
+      favourite
+---
+code: |
+  favourite = list(map(favourite))
 ---
 objects:
   - DADTObject: DAList
