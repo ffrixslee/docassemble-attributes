@@ -23,18 +23,6 @@ code: |
               'insurance'
               ]
 ---
-generic object: DADTTest
-question: Please specify a list.
-field:
-  - ${ x.object_name()} : x.value
-    datatype: radio
-    code: |
-      favourite
----
-code: |
-  peanuts = peanuts.append(favourite)
-   
----
 objects:
   - name: Thing
   - age: Thing
