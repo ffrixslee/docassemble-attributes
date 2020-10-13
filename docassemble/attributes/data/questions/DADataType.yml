@@ -26,15 +26,14 @@ code: |
 generic object: Test
 question: Please specify a list.
 field: 
-  - ${ x.object_name() }: x.value
+  - ${ x.object_name() } : x.value
     datatype: radio
     code: |
       listo
 ---
 code: |
   listo = [2,3,4]
-
-
+---
 objects:
   - name: Thing
   - age: Thing
