@@ -29,7 +29,7 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: radio
     choices:
-      - favourite
+      - favourite.name
 ---
 objects:
   - DADTObject: DAList
