@@ -29,10 +29,10 @@ fields:
   - ${ x.object_name() }: x.value
     datatype: radio
     code: |
-      favourite
+      stuff
 ---
 code: |
-  favourite = list(map(favourite))
+  stuff = list(map(favourite))
 ---
 objects:
   - DADTObject: DAList
