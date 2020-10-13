@@ -23,6 +23,14 @@ code: |
               'insurance'
               ]
 ---
+generic object: DADTTest
+question: Please specify a list.
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: radio
+    choices:
+      - favourite
+---
 objects:
   - DADTObject: DAList
   - name: Thing
